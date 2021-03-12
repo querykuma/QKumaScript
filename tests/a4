@@ -1,0 +1,23 @@
+print "# test - left/right association";
+println;
+
+var i = function() {
+    return 4**3**2**1;
+};
+print i;
+print i();
+println;
+
+i = function() {
+    return 4*3*2*1;
+};
+print i;
+print i();
+println;
+
+i = function() {
+    return !!1--1+10**2;
+};
+print i;
+print i();
+println;

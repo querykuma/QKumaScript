@@ -1,0 +1,9 @@
+main tests/a1
+echo
+main tests/a2
+echo
+main tests/a3
+echo
+main tests/a4
+echo
+main tests/a5

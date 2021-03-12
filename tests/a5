@@ -1,0 +1,23 @@
+print "# test - closure";
+println;
+
+var fun = function(x) {
+    var inner = function() {
+        x = x + 1;
+        return x;
+    };
+    return inner;
+};
+
+var f1 = fun(1);
+var f2 = fun(1);
+
+print f1();
+println;
+print f2();
+println;
+
+print f1();
+println;
+print f2();
+println;

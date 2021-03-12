@@ -1,0 +1,24 @@
+print "# test - while";
+println;
+
+var i = 1;
+var sum = 0;
+
+while (i<11)
+{
+    print i;
+    if (i==10)
+    {
+        println;
+    }
+    else
+    {
+        print ", ";
+    };
+    sum=sum+i;
+    i=i+1;
+}
+
+print "sum = ";
+print sum;
+println;

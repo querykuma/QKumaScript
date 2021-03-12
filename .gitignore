@@ -1,0 +1,14 @@
+gomi/*
+.vscode/*
+*.txt
+!a.txt
+*.o
+*.exe
+lex.yy.*
+y.*
+t.c
+doc/*
+.settings
+.cproject
+.project
+sample/*
