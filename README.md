@@ -16,7 +16,7 @@ You can see sample scripts under the tests folder.
 
 ## BNF Grammar
 
-```yaml
+```EBNF
 program  ::= statement_list
 statement_list ::= statement*
 statement ::= statement_no_semicolon ';'
