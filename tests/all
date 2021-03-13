@@ -1,9 +1,9 @@
-main tests/a1
+qks tests/a1.qks
 echo
-main tests/a2
+qks tests/a2.qks
 echo
-main tests/a3
+qks tests/a3.qks
 echo
-main tests/a4
+qks tests/a4.qks
 echo
-main tests/a5
+qks tests/a5.qks

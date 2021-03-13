@@ -4,7 +4,7 @@ WFLAG = -Wall -Wextra -Wl,--disable-dynamicbase
 CFLAGS = -g $(WFLAG)
 CPPFLAGS = -g $(WFLAG)
 OBJS = lex.yy.o y.tab.o main.o str.o malloc.o map.o util.o node.o debug.o d_malloc.o
-PROGRAM = main.exe
+PROGRAM = qks.exe
 
 all: $(PROGRAM)
 

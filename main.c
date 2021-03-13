@@ -14,7 +14,7 @@ extern FILE *yyin, *yyout;
 
 int main(int argc, char **argv)
 {
-	const char *filename = "a.txt";
+	const char *filename = "a.qks";
 	FILE *fp = NULL;
 
 	if (argc >= 2)
