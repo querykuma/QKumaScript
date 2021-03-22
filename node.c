@@ -11,11 +11,11 @@ _Noreturn void run_exit(Node *node, char *msg)
 {
     if (msg)
     {
-        fprintf(stderr, "error at line %llu: %s\n", node->line_num, msg);
+        fprintf(stderr, "error at line %" PRIu64 ": %s\n", node->line_num, msg);
     }
     else
     {
-        fprintf(stderr, "error at line %llu\n", node->line_num);
+        fprintf(stderr, "error at line %" PRIu64 "\n", node->line_num);
     }
     exit(1);
 }
@@ -280,7 +280,7 @@ char *node_tostring(Node *node, Env *env, int depth)
         ret = my_strcat(cdepth, temp, VEND);
         break;
     case Num_Node:
-        sprintf(temp, "(Num %lld)\n", node->ivalue);
+        sprintf(temp, "(Num %" PRIu64 ")\n", node->ivalue);
         ret = my_strcat(cdepth, temp, VEND);
         break;
     case String_Node:
@@ -376,7 +376,7 @@ Node *run(Node *node, Env *env)
 
         if (n1->type == Num_Node)
         {
-            printf("%lld", n1->ivalue);
+            printf("%" PRIu64 "", n1->ivalue);
         }
         else if (n1->type == String_Node)
         {

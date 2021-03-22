@@ -16,7 +16,7 @@ char *pn(Node *node, Env *env)
     print_node(node, env);
 
     if (node->line_num)
-        printf("line: %llu\n", node->line_num);
+        printf("line: %" PRIu64 "\n", node->line_num);
 
     return 0;
 }
@@ -26,7 +26,7 @@ char *pe(Env *env)
     uint64_t depth = 0;
     while (env)
     {
-        printf("pe reverse depth = %llu\n", depth);
+        printf("pe reverse depth = %" PRIu64 "\n", depth);
         depth++;
 
         cpp_map_list_keys(map_stringkey_kind, env->map_void);

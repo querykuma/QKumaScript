@@ -2,6 +2,7 @@ gomi/*
 .vscode/*
 *.txt
 *.qks
+!a.qks
 *.o
 *.exe
 lex.yy.*

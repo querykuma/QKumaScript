@@ -16,7 +16,7 @@ int64_t my_power(int64_t base, int64_t index)
 
 void yyerror(char const *s)
 {
-    fprintf(stderr, "%s at line %llu.\n", s, line_no);
+    fprintf(stderr, "%s at line %" PRIu64 ".\n", s, line_no);
 }
 
 Env *make_env(Env *env_in)

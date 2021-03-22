@@ -1,9 +1,0 @@
-qks tests/a1.qks
-echo
-qks tests/a2.qks
-echo
-qks tests/a3.qks
-echo
-qks tests/a4.qks
-echo
-qks tests/a5.qks

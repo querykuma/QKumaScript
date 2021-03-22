@@ -1,6 +1,12 @@
 CC = gcc
 CPP = g++
-WFLAG = -Wall -Wextra -Wl,--disable-dynamicbase
+
+ifeq ($(OS),Windows_NT)
+ WFLAG = -Wall -Wextra -Wl,--disable-dynamicbase
+else
+ WFLAG = -Wall -Wextra
+endif
+
 CFLAGS = -g $(WFLAG)
 CPPFLAGS = -g $(WFLAG)
 OBJS = lex.yy.o y.tab.o main.o str.o malloc.o map.o util.o node.o debug.o d_malloc.o

@@ -1,5 +1,6 @@
 #ifndef NODE_H
 #define NODE_H
+#include <inttypes.h>
 #include <stdint.h>
 typedef enum _Node_Type
 {
