@@ -9,7 +9,7 @@ QKumaScript is an experimental scripting language using Bison.
 $ make
 
 // run a test script
-$ qks tests/a1.qks
+$ ./qks.exe tests/a1.qks
 ```
 
 You can see sample scripts under the tests folder.
